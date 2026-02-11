@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Que música é essa?</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <p class="eyebrow">SaaS • Encontrar músicas pelo pedaço</p>
+        <h1 id="app-title">Que música é essa?</h1>
+        <p class="subtitle">
+          Escreva um trecho da letra ou descreva a música com suas palavras.
+          Se preferir, fale pelo microfone. A IA analisa o texto/áudio e
+          sugere quais músicas isso pode ser, exibindo tudo aqui mesmo na página.
+        </p>
+      </header>
+
+      <main class="main" aria-labelledby="app-title">
+        <section class="input-card" aria-label="Entrada de trecho da música">
+          <label for="query" class="field-label">Trecho ou descrição</label>
+          <p class="field-hint">
+            Exemplo: "tô nem aí, tô nem aí" ou "uma música romântica que fala de
+            chuva e guarda-chuva".
+          </p>
+
+          <textarea
+            id="query"
+            class="textarea"
+            placeholder="Digite aqui o pedaço que você lembra ou descreva a música..."
+            aria-label="Digite o trecho da música ou descreva a música"
+          ></textarea>
+
+          <div class="actions-row">
+            <button
+              type="button"
+              id="mic-button"
+              class="button button-secondary"
+            >
+              <span class="mic-dot" aria-hidden="true"></span>
+              <span id="mic-label">Falar trecho</span>
+            </button>
+
+            <button
+              type="button"
+              id="submit-button"
+              class="button button-primary"
+            >
+              Descobrir música
+            </button>
+          </div>
+
+          <div class="progress" id="progress" aria-hidden="true">
+            <div class="progress-bar-outer">
+              <div class="progress-bar-inner" id="progress-bar"></div>
+            </div>
+            <span class="progress-percent" id="progress-percent">0%</span>
+          </div>
+
+          <p id="status" class="status" aria-live="polite"></p>
+        </section>
+
+        <section class="results" aria-label="Possíveis músicas encontradas">
+          <h2 class="results-title">Possíveis músicas</h2>
+          <p class="results-hint">
+            As sugestões aparecem aqui com nome da música e artista, ordenadas
+            pela probabilidade de combinarem com o que você escreveu ou cantou.
+          </p>
+          <ul id="results-list" class="results-list"></ul>
+        </section>
+
+        <footer class="footer">
+          <p class="footer-text">
+            Esta é a primeira versão de interface conectada à IA. Ela tenta
+            adivinhar quais músicas combinam com o que você escreveu/falou,
+            mostrando tudo direto aqui.
+          </p>
+        </footer>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
