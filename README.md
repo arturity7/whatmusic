@@ -15,7 +15,7 @@ Basta escrever parte da letra de uma música ou descrever o que você lembra —
 3. A IA analisa o conteúdo utilizando **processamento de linguagem natural**
 4. O sistema retorna **músicas que correspondem ao texto ou áudio enviado**
 
-Esse tipo de sistema utiliza técnicas de análise de texto e emoção para recomendar músicas com base na descrição do usuário, algo comum em sistemas de recomendação musical modernos.  [oai_citation:0‡GitHub](https://github.com/wkdalsgh192/Web-Music-Recommendation?utm_source=chatgpt.com)
+Esse tipo de sistema utiliza técnicas de análise de texto e emoção para recomendar músicas com base na descrição do usuário, algo comum em sistemas de recomendação musical modernos.
 
 ---
 
